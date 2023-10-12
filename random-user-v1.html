@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Random User API Example V1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body>
+
+<div class="container my-5 p-5 shadow-lg">
+    <div class="row justify-content-center">
+        <div class="col-lg-9">
+            <h1 class="display-3 text-center my-3">Random User API</h1>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary" id="get-one-user-button">Get 1 random user</button>
+            </div>
+
+            <section class="shadow my-3">
+                <div class="card" id="single-user-container" style="display: none">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-sm-4">
+                            <img id="profile-img" class="card-img rounded p-1" alt="profile-image">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-body">
+                                <h5 class="card-title"><span id="name"></span></h5>
+                                <p class="card-text">Email: <span id="email"></span></p>
+                                <p class="card-text">Phone: <span id="phone"></span></p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="js/random-user-v1.js"></script>
+
+</body>
+</html>
